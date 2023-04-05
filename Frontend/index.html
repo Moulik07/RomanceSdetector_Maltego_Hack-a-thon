@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Main Page </title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+<body style="background-image: url(img1.jpg); background-repeat: no-repeat; background-size: cover; ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RomanceSdetector</a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="records.html">Records</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <br>
+      <ul class="nav justify-content-center" >
+        <li class="nav-item">
+            
+          <a class="nav-link" style="font-size:19px; color: white;"> Search By  &nbsp; </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="font-size:19px; color: yellow;" href="#">URL &nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" style="font-size:19px ; color: white;" href="#">Email  &nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white; font-size:19px;" href="#">Phone</a>
+        </li>
+      </ul>
+
+      <form id="submitForm" >
+        <div style=" margin: auto; width: 25%; padding: 20px;">
+          <input id="message" type="text" placeholder="Search..." autofocus required />
+       <i type="button" onclick="showMessage()" class="fa fa-search" style="font-size:26px"> </i>
+       </div>
+      </form>
+      
+
+
+
+    <div style="font-size: 19px; font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:greenyellow; background-color: rgba(41, 41, 41,0.55); margin-left: 30%; width: 40%; padding: 2px; text-align: center;">
+        Enter your Url to search whether the webpage is related to Romance Scam or Not.
+    </div>
+    <div style="padding-bottom: 70px;">
+
+    </div>
+    <p style="color:orangered; max-width: 1000px ; padding-left:280px ; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 23px; background-color: rgba(27, 27, 27, 0.377); "> <span id = "display_message"></span> </p>
+
+</body>
+
+<script type="text/JavaScript">
+  function showMessage(){
+      var message = document.getElementById("message").value;
+
+      if (message == "") {
+        alert("URL must be filled out");
+        return false;
+      }
+      else if (message.includes("https://")) {
+        
+      }
+      else{
+        alert("Enter valid URL");
+        return false;
+      }
+      
+      if (message.includes("scam") || message.includes("fraud")) {
+        // display_message.innerHTML= 'The given URL "' + message +'" may be suspicious,be alert while using  &#9888;';
+        display_message.innerHTML= 'The given URL "' + message +'" may be suspicious,be alert while using  &#9888;'+ '  Email notification has been sent. \n Website already in blacklist';
+
+      }
+      else{
+        display_message.innerHTML= 'The given URL "' + message +'" is safe to use';
+
+      }
+  }
+</script>
+
+
+</html>
