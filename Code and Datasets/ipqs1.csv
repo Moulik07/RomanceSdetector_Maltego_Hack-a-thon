@@ -1,0 +1,15 @@
+maltego.EmailAddress,Email Address,IPQS Validated,Deliverability (IPQS),Common (IPQS),Leaked (IPQS)
+EntityID,email,ipqs_verified,ipqs_deliverability,ipqs_common,ipqs_leaked
+2rnil739j56x6,moulikarora07@gmail.com,TRUE,high,TRUE,FALSE
+2rnil739j56x6,vineetjain17@gmail.com,TRUE,high,TRUE,TRUE
+2rnil739j56x6,yash777@gmail.com,FALSE,high,TRUE,FALSE
+2rnil739j56x6,anonymous123@gmail.com,TRUE,high,TRUE,TRUE
+2sh19any9up18,lucasmichadam@gmail.com,TRUE,high,TRUE,TRUE
+2sh19any9up19,chrisstanley104@yahoo.com,TRUE,medium,TRUE,TRUE
+2sh19any9up1a,dave.watson767676@gmail.com,TRUE,high,TRUE,FALSE
+2sh19any9up1b,austinsandra900@gmail.com,TRUE,low,TRUE,TRUE
+2sh19any9up14,michaelsunnyrich555@gmail.com,FALSE,low,TRUE,TRUE
+2sh19any9up15,adebajoadewale76@gmail.com,TRUE,high,TRUE,TRUE
+2sh19any9up16,frankthompson909@gmail.com,TRUE,low,TRUE,FALSE
+2sh19any9up17,halansmithphilip@yahoo.com,TRUE,medium,TRUE,FALSE
+2sh19any9up13,perpetualamoako44@gmail.com,TRUE,low,TRUE,TRUE
