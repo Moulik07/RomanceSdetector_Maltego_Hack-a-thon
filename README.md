@@ -1,7 +1,7 @@
 # RomanceSdetector
 CYBER FORENSICS T20 SERIES - Hackathon
 
-The purpose of our project is to find out suspicious Romance scams webpage, emails and link. We have used different process for data extration, Initially the data has been collected from Maltego tool using various tool and has been extract in the form of csv files. Later on we have used those datasets of emails and links to get tag and verify them either they are suspicious or not using various transforms such as IPQS. 
+The purpose of our project is to find out suspicious Romance scams webpage, emails and link. We have used different process for data extration, Initially the data has been collected from Maltego tool using various transforms and has been extract in the form of csv files. Later on we have used those datasets of emails and links to get tag and verify them either they are suspicious or not using various transforms such as IPQS. 
 
 On the other side, We have generated our own algorithm to Design and develop a technological solution/software tool that read information on web pages using Web scrapping tool, and identify possible instances of romance scams. The system may send notifications. Over a period of time, a dynamic infringing website list (IWL) may be developed and maintained. The system may send notifications to online social media like Facebook for blacklisting of such websites, thereby discouraging romance scams.
 
